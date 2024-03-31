@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+   
+   
+</head>
+<body>
+    <header >
+        <div id="main" class="imgs">
+            <img  onclick="scrollToTop()" src="logo1.png" alt="">
+        </div>
+        
+        <div class="menu-items">
+            <ul class="navbar">
+                <li onclick="scrollToServices()">Usługi</li>
+                <li onclick="scrollToKontacts()">Kontakt</li>
+                <li onclick="scrollToCennik()">Cennik</li>
+            </ul>
+          
+        </div>
+    </header>
+    
+<div class="container">
+    <h1 class="text">Zespoł <br> Disco Polo</h1>
+    <button class="btn" onclick="scrollToCennik()">Zobacz Cennik</button>
+    <img class="body-img" src="/123.png" alt="">
+</div> 
+<main>
+    <div>
+        <h1 class="main-text">Czym się zajmuje?</h1>
+    </div>
+    <div class="flex">
+        <div class="border">
+            <h1 class="text-div">Wesoły</h1>
+            <p class="text-p">Ważne i ekscytujące wydarzenie, podczas którego Zespół Disco Polo tworzy atmosferę zabawy i radości, wypełniając dzień ślubu wyjątkową muzyką i energią.</p>
+        </div>
+        <div class="border" >
+            <h1 class="text-div">Koncerty</h1>
+            <p class="text-p">Energetyczne występy zespołu Disco Polo, w których muzyczne hity i dynamiczne rytmy sprawiają, że publiczność zanurza się w atmosferze święta i dobrej zabawy.</p>
+        </div>
+        <div class="border">
+            <h1 class="text-div">Studniówki</h1>
+            <p class="text-p">Urokliwe imprezy, na których Zespół Disco Polo tworzy niepowtarzalną atmosferę zabawy i tańca, pomagając maturzystom stworzyć żywe wspomnienia ze studniówki.</p>
+        </div>
+    </div>
+    <div class="containers" id="uslugi">
+        <div class="content">
+            <h1 class="main-t">Usługi</h1>
+            <div class="service-card">
+                <h2>Występy na weselach</h2>
+                <p>Jedną z głównych usług, którą oferuje zespół Disco Polo, jest muzyka na żywo i rozrywka na weselach.</p>
+            </div>
+            <div class="service-card">
+                <h2>Wydarzenia korporacyjne</h2>
+                <p>Zespół Disco Polo może występować na imprezach korporacyjnych, festiwalach lub innych wydarzeniach biznesowych.</p>
+            </div>
+            <div class="service-card">
+                <h2>Koncerty i festiwale</h2>
+                <p>Mogą także występować na koncertach i festiwalach muzycznych.</p>
+            </div>
+            <div class="service-card">
+                <h2>Występy na studniówkach i balach studenckich</h2>
+                <p>To ważne wydarzenia, gdzie atmosfera muzyczna odgrywa kluczową rolę.</p>
+            </div>
+            <div class="service-card">
+                <h2>Prywatne imprezy i wydarzenia</h2>
+                <p>Zespół Disco Polo może zorganizować występy na prywatkach, przyjęciach urodzinowych i innych imprezach rodzinnych.</p>
+            </div>
+        </div>
+    </div>
+    <div id="cennik">
+        <h1 class="cennik-t">Cennik</h1>
+            <div class="cont">
+                <div class="service-cards">
+                    <table class="price-table">
+                        <tr>
+                            <th>Usługa</th>
+                            <th>Cena</th>
+                        </tr>
+                        <tr>
+                            <td>Występy na weselach</td>
+                            <td>3000 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Wydarzenia korporacyjne</td>
+                            <td>2500 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Koncerty i festiwale</td>
+                            <td>4000 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Występy na studniówkach i balach studenckich</td>
+                            <td>2000 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Prywatne imprezy i wydarzenia</td>
+                            <td>3500 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Imprezy tematyczne</td>
+                            <td>2800 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Organizacja programów muzycznych i show</td>
+                            <td>4500 zł</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h1 class="cennik-t">Napisz do nas</h1>
+    </div>
+    <footer class="flex" id="kontacts">
+        <div>
+            <form action="/submit" method="post">
+                <label for="fname">Imię:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Nazwisko:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Adres email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
+        <div class="mt" >
+            <img  class="size" src="logo1.png" alt="">
+            <h1 class="footer-h">Zespół Disco Pola</h1>
+            <p class="footer-p">ul. Klasyczna 6  20-098 Lublin </p>
+            <p class="footer-p">+48 756 567 985</p>
+            <p class="footer-p">zespol.disco@gmail.com</p>
+        </div>
+    </footer>
+</main>
+</body>
+<script src="index.js" ></script>
+</html>
